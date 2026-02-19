@@ -4,3 +4,5 @@
 Homework 1
 
 REINFORCEMENT LEARNING, результаты в файле hw1/exp_block1_report.pdf
+
+BEHAVIOUR CLONING, результаты в файле hw1/exp_block2_report.pdf
