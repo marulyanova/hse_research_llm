@@ -191,6 +191,8 @@ def main():
     )
     df.to_csv(f"logs/{args.save_prefix}.csv", index=False)
 
+    torch.save(policy.state_dict(), f"models/expert_{LOSS}_{args.entropy_reg_coef}.pth")
+
 
 if __name__ == "__main__":
     main()
