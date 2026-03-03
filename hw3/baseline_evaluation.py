@@ -63,13 +63,14 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     CONFIG = {
-        "num_samples": 128,
+        "num_samples": 10,
         "device": device,
         "temperature": 1.0,
         "top_k": 50,
         "max_new_tokens": 1024,
         "model": "Qwen/Qwen2.5-0.5B-Instruct",
     }
+    print(f"Запуск с параметрами: {CONFIG}")
 
     model = AutoModelForCausalLM.from_pretrained(CONFIG["model"], device_map=device)
     tokenizer = AutoTokenizer.from_pretrained(CONFIG["model"])
