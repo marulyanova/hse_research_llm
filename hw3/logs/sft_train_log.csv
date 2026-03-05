@@ -1,0 +1,14 @@
+Step,Training Loss,Validation Loss,reward,reward_std,completions / mean_length,completions / min_length,completions / max_length,completions / clipped_ratio,completions / mean_terminated_length,completions / min_terminated_length,completions / max_terminated_length,sampling / sampling_logp_difference / mean,sampling / sampling_logp_difference / max,sampling / importance_sampling_ratio / min,sampling / importance_sampling_ratio / mean,sampling / importance_sampling_ratio / max,kl,rewards / verifier_reward / mean,rewards / verifier_reward / std
+5,2.708352,2.980642,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,2.627088,2.590238,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+15,2.327160,2.276581,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+20,2.111454,2.061852,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+25,1.856015,1.880154,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+30,1.683501,1.719074,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+35,1.646637,1.568399,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+40,1.424957,1.436523,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+45,1.383119,1.331874,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+50,1.280492,1.255062,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+55,1.249870,1.199389,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+60,1.139333,1.164211,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
+65,1.185965,1.150791,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log,No Log
