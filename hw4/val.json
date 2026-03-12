@@ -1,0 +1,2468 @@
+[
+  {
+    "question_id": 0,
+    "user_messages": [
+      "Book stretching on 2026-04-12 for client 88. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 1,
+    "user_messages": [
+      "Book stretching on 2026-04-28 for client 86. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 2,
+    "user_messages": [
+      "Book yoga on 2026-04-17 for client 59. Sex: female.",
+      "Ok, try 2026-04-12 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 3,
+    "user_messages": [
+      "Book stretching on 2026-04-36 for client 99. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 4,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 57. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 5,
+    "user_messages": [
+      "Book stretching on 2026-04-08 for client 71. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 6,
+    "user_messages": [
+      "Book yoga on 2026-04-28 for client 48. Sex: female.",
+      "Ok, try 2026-04-12 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 7,
+    "user_messages": [
+      "Book dance on 2026-04-50 for client 81. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 8,
+    "user_messages": [
+      "Book stretching on 2026-04-07 for client 18. Sex: female.",
+      "Ok, try 2026-04-32 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 9,
+    "user_messages": [
+      "Book dance on 2026-04-11 for client 50. Sex: male.",
+      "Ok, try 2026-04-05 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 10,
+    "user_messages": [
+      "Book stretching on 2026-04-06 for client 27. Sex: male.",
+      "Ok, try 2026-04-32 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 11,
+    "user_messages": [
+      "Book dance on 2026-04-35 for client 68. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 12,
+    "user_messages": [
+      "Book stretching on 2026-04-12 for client 17. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 13,
+    "user_messages": [
+      "Book yoga on 2026-04-15 for client 54. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 14,
+    "user_messages": [
+      "Book stretching on 2026-04-16 for client 88. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 15,
+    "user_messages": [
+      "Book yoga on 2026-04-14 for client 55. Sex: male.",
+      "Ok, try 2026-04-30 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 16,
+    "user_messages": [
+      "Book stretching on 2026-04-32 for client 54. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 17,
+    "user_messages": [
+      "Book yoga on 2026-04-27 for client 34. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 18,
+    "user_messages": [
+      "Book yoga on 2026-04-06 for client 27. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 19,
+    "user_messages": [
+      "Book yoga on 2026-04-28 for client 51. Sex: female.",
+      "Ok, try 2026-04-06 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 20,
+    "user_messages": [
+      "Book dance on 2026-04-18 for client 2. Sex: female.",
+      "Ok, try 2026-04-35 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 21,
+    "user_messages": [
+      "Book stretching on 2026-04-19 for client 56. Sex: male.",
+      "Ok, try 2026-04-16 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 22,
+    "user_messages": [
+      "Book yoga on 2026-04-30 for client 1. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 23,
+    "user_messages": [
+      "Book dance on 2026-04-05 for client 16. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 24,
+    "user_messages": [
+      "Book stretching on 2026-04-24 for client 82. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 25,
+    "user_messages": [
+      "Book dance on 2026-04-17 for client 35. Sex: female.",
+      "Ok, try 2026-04-05 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 26,
+    "user_messages": [
+      "Book yoga on 2026-04-26 for client 77. Sex: female.",
+      "Ok, try 2026-04-27 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 27,
+    "user_messages": [
+      "Book dance on 2026-04-05 for client 65. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 28,
+    "user_messages": [
+      "Book stretching on 2026-04-32 for client 8. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 29,
+    "user_messages": [
+      "Book stretching on 2026-04-01 for client 4. Sex: male.",
+      "Ok, try 2026-04-32 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 30,
+    "user_messages": [
+      "Book dance on 2026-04-23 for client 67. Sex: male.",
+      "Ok, try 2026-04-20 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 31,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 36. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 32,
+    "user_messages": [
+      "Book yoga on 2026-04-08 for client 88. Sex: male.",
+      "Ok, try 2026-04-06 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 33,
+    "user_messages": [
+      "Book stretching on 2026-04-06 for client 55. Sex: female.",
+      "Ok, try 2026-04-32 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 34,
+    "user_messages": [
+      "Book dance on 2026-04-04 for client 69. Sex: female.",
+      "Ok, try 2026-04-30 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 35,
+    "user_messages": [
+      "Book yoga on 2026-04-15 for client 98. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 36,
+    "user_messages": [
+      "Book yoga on 2026-04-15 for client 48. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 37,
+    "user_messages": [
+      "Book dance on 2026-04-35 for client 15. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 38,
+    "user_messages": [
+      "Book yoga on 2026-04-14 for client 17. Sex: male.",
+      "Ok, try 2026-04-24 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 39,
+    "user_messages": [
+      "Book dance on 2026-04-45 for client 76. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 40,
+    "user_messages": [
+      "Book dance on 2026-04-29 for client 86. Sex: male.",
+      "Ok, try 2026-04-10 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 41,
+    "user_messages": [
+      "Book dance on 2026-04-20 for client 89. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 42,
+    "user_messages": [
+      "Book stretching on 2026-04-04 for client 38. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 43,
+    "user_messages": [
+      "Book dance on 2026-04-45 for client 21. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 44,
+    "user_messages": [
+      "Book dance on 2026-04-06 for client 94. Sex: male.",
+      "Ok, try 2026-04-15 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 45,
+    "user_messages": [
+      "Book yoga on 2026-04-29 for client 50. Sex: female.",
+      "Ok, try 2026-04-03 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 46,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 83. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 47,
+    "user_messages": [
+      "Book dance on 2026-04-06 for client 11. Sex: male.",
+      "Ok, try 2026-04-10 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 48,
+    "user_messages": [
+      "Book yoga on 2026-04-10 for client 91. Sex: female.",
+      "Ok, try 2026-04-24 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 49,
+    "user_messages": [
+      "Book stretching on 2026-04-01 for client 94. Sex: female.",
+      "Ok, try 2026-04-24 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 50,
+    "user_messages": [
+      "Book yoga on 2026-04-06 for client 76. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 51,
+    "user_messages": [
+      "Book yoga on 2026-04-09 for client 99. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 52,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 54. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 53,
+    "user_messages": [
+      "Book dance on 2026-04-25 for client 47. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 54,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 33. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 55,
+    "user_messages": [
+      "Book dance on 2026-04-21 for client 34. Sex: male.",
+      "Ok, try 2026-04-40 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 56,
+    "user_messages": [
+      "Book dance on 2026-04-13 for client 99. Sex: female.",
+      "Ok, try 2026-04-40 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 57,
+    "user_messages": [
+      "Book stretching on 2026-04-16 for client 87. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 58,
+    "user_messages": [
+      "Book dance on 2026-04-40 for client 81. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 59,
+    "user_messages": [
+      "Book dance on 2026-04-28 for client 51. Sex: male.",
+      "Ok, try 2026-04-20 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 60,
+    "user_messages": [
+      "Book yoga on 2026-04-21 for client 82. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 61,
+    "user_messages": [
+      "Book dance on 2026-04-40 for client 90. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 62,
+    "user_messages": [
+      "Book dance on 2026-04-15 for client 7. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 63,
+    "user_messages": [
+      "Book stretching on 2026-04-17 for client 23. Sex: female.",
+      "Ok, try 2026-04-12 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 64,
+    "user_messages": [
+      "Book yoga on 2026-04-25 for client 83. Sex: female.",
+      "Ok, try 2026-04-03 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 65,
+    "user_messages": [
+      "Book yoga on 2026-04-04 for client 47. Sex: female.",
+      "Ok, try 2026-04-15 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 66,
+    "user_messages": [
+      "Book stretching on 2026-04-14 for client 61. Sex: female.",
+      "Ok, try 2026-04-32 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 67,
+    "user_messages": [
+      "Book dance on 2026-04-35 for client 16. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 68,
+    "user_messages": [
+      "Book yoga on 2026-04-14 for client 30. Sex: male.",
+      "Ok, try 2026-04-03 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 69,
+    "user_messages": [
+      "Book stretching on 2026-04-09 for client 14. Sex: male.",
+      "Ok, try 2026-04-24 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 70,
+    "user_messages": [
+      "Book dance on 2026-04-05 for client 73. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 71,
+    "user_messages": [
+      "Book stretching on 2026-04-20 for client 91. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 72,
+    "user_messages": [
+      "Book dance on 2026-04-40 for client 7. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 73,
+    "user_messages": [
+      "Book dance on 2026-04-10 for client 69. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 74,
+    "user_messages": [
+      "Book yoga on 2026-04-12 for client 67. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 75,
+    "user_messages": [
+      "Book dance on 2026-04-05 for client 72. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 76,
+    "user_messages": [
+      "Book stretching on 2026-04-04 for client 49. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 77,
+    "user_messages": [
+      "Book dance on 2026-04-10 for client 45. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 78,
+    "user_messages": [
+      "Book dance on 2026-04-05 for client 79. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 79,
+    "user_messages": [
+      "Book dance on 2026-04-23 for client 85. Sex: male.",
+      "Ok, try 2026-04-10 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 80,
+    "user_messages": [
+      "Book yoga on 2026-04-03 for client 81. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 81,
+    "user_messages": [
+      "Book dance on 2026-04-35 for client 99. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 82,
+    "user_messages": [
+      "Book yoga on 2026-04-15 for client 67. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 83,
+    "user_messages": [
+      "Book dance on 2026-04-15 for client 57. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 84,
+    "user_messages": [
+      "Book yoga on 2026-04-09 for client 9. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 85,
+    "user_messages": [
+      "Book dance on 2026-04-05 for client 19. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 86,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 56. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 87,
+    "user_messages": [
+      "Book dance on 2026-04-01 for client 91. Sex: male.",
+      "Ok, try 2026-04-25 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 88,
+    "user_messages": [
+      "Book dance on 2026-04-27 for client 8. Sex: male.",
+      "Ok, try 2026-04-30 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 89,
+    "user_messages": [
+      "Book dance on 2026-04-50 for client 85. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 90,
+    "user_messages": [
+      "Book dance on 2026-04-35 for client 94. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 91,
+    "user_messages": [
+      "Book dance on 2026-04-19 for client 58. Sex: male.",
+      "Ok, try 2026-04-35 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 92,
+    "user_messages": [
+      "Book dance on 2026-04-15 for client 77. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 93,
+    "user_messages": [
+      "Book dance on 2026-04-40 for client 79. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 94,
+    "user_messages": [
+      "Book stretching on 2026-04-10 for client 4. Sex: female.",
+      "Ok, try 2026-04-24 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 95,
+    "user_messages": [
+      "Book yoga on 2026-04-20 for client 64. Sex: female.",
+      "Ok, try 2026-04-24 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 96,
+    "user_messages": [
+      "Book stretching on 2026-04-36 for client 27. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 97,
+    "user_messages": [
+      "Book stretching on 2026-04-36 for client 59. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 98,
+    "user_messages": [
+      "Book dance on 2026-04-05 for client 77. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 99,
+    "user_messages": [
+      "Book stretching on 2026-04-04 for client 57. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 100,
+    "user_messages": [
+      "Book dance on 2026-04-40 for client 100. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 101,
+    "user_messages": [
+      "Book dance on 2026-04-11 for client 38. Sex: female.",
+      "Ok, try 2026-04-20 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 102,
+    "user_messages": [
+      "Book stretching on 2026-04-24 for client 44. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 103,
+    "user_messages": [
+      "Book dance on 2026-04-40 for client 81. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 104,
+    "user_messages": [
+      "Book yoga on 2026-04-09 for client 30. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 105,
+    "user_messages": [
+      "Book yoga on 2026-04-09 for client 45. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 106,
+    "user_messages": [
+      "Book dance on 2026-04-15 for client 70. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 107,
+    "user_messages": [
+      "Book dance on 2026-04-22 for client 82. Sex: male.",
+      "Ok, try 2026-04-45 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 108,
+    "user_messages": [
+      "Book yoga on 2026-04-25 for client 10. Sex: male.",
+      "Ok, try 2026-04-03 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 109,
+    "user_messages": [
+      "Book dance on 2026-04-26 for client 78. Sex: male.",
+      "Ok, try 2026-04-05 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 110,
+    "user_messages": [
+      "Book yoga on 2026-04-30 for client 44. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 111,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 100. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 112,
+    "user_messages": [
+      "Book yoga on 2026-04-18 for client 52. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 113,
+    "user_messages": [
+      "Book yoga on 2026-04-18 for client 43. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 114,
+    "user_messages": [
+      "Book dance on 2026-04-25 for client 72. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 115,
+    "user_messages": [
+      "Book yoga on 2026-04-01 for client 11. Sex: male.",
+      "Ok, try 2026-04-03 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 116,
+    "user_messages": [
+      "Book dance on 2026-04-35 for client 98. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 117,
+    "user_messages": [
+      "Book yoga on 2026-04-28 for client 47. Sex: female.",
+      "Ok, try 2026-04-09 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 118,
+    "user_messages": [
+      "Book stretching on 2026-04-32 for client 35. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 119,
+    "user_messages": [
+      "Book stretching on 2026-04-24 for client 51. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 120,
+    "user_messages": [
+      "Book yoga on 2026-04-07 for client 27. Sex: female.",
+      "Ok, try 2026-04-12 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 121,
+    "user_messages": [
+      "Book yoga on 2026-04-30 for client 34. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 122,
+    "user_messages": [
+      "Book stretching on 2026-04-12 for client 13. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 123,
+    "user_messages": [
+      "Book dance on 2026-04-20 for client 4. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 124,
+    "user_messages": [
+      "Book stretching on 2026-04-08 for client 1. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 125,
+    "user_messages": [
+      "Book stretching on 2026-04-28 for client 27. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 126,
+    "user_messages": [
+      "Book dance on 2026-04-03 for client 40. Sex: female.",
+      "Ok, try 2026-04-20 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 127,
+    "user_messages": [
+      "Book yoga on 2026-04-15 for client 86. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 128,
+    "user_messages": [
+      "Book stretching on 2026-04-16 for client 84. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 129,
+    "user_messages": [
+      "Book stretching on 2026-04-04 for client 20. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 130,
+    "user_messages": [
+      "Book yoga on 2026-04-30 for client 70. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 131,
+    "user_messages": [
+      "Book yoga on 2026-04-12 for client 99. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 132,
+    "user_messages": [
+      "Book yoga on 2026-04-30 for client 2. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 133,
+    "user_messages": [
+      "Book stretching on 2026-04-01 for client 69. Sex: female.",
+      "Ok, try 2026-04-20 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 134,
+    "user_messages": [
+      "Book dance on 2026-04-20 for client 76. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 135,
+    "user_messages": [
+      "Book dance on 2026-04-07 for client 45. Sex: female.",
+      "Ok, try 2026-04-20 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 136,
+    "user_messages": [
+      "Book yoga on 2026-04-18 for client 43. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 137,
+    "user_messages": [
+      "Book dance on 2026-04-15 for client 68. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 138,
+    "user_messages": [
+      "Book stretching on 2026-04-04 for client 31. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 139,
+    "user_messages": [
+      "Book dance on 2026-04-10 for client 18. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 140,
+    "user_messages": [
+      "Book stretching on 2026-04-08 for client 19. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 141,
+    "user_messages": [
+      "Book dance on 2026-04-30 for client 96. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 142,
+    "user_messages": [
+      "Book dance on 2026-04-16 for client 57. Sex: male.",
+      "Ok, try 2026-04-35 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 143,
+    "user_messages": [
+      "Book stretching on 2026-04-10 for client 44. Sex: female.",
+      "Ok, try 2026-04-08 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 144,
+    "user_messages": [
+      "Book yoga on 2026-04-30 for client 93. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 145,
+    "user_messages": [
+      "Book stretching on 2026-04-07 for client 38. Sex: male.",
+      "Ok, try 2026-04-24 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 146,
+    "user_messages": [
+      "Book stretching on 2026-04-10 for client 68. Sex: male.",
+      "Ok, try 2026-04-08 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 147,
+    "user_messages": [
+      "Book dance on 2026-04-40 for client 59. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 148,
+    "user_messages": [
+      "Book stretching on 2026-04-04 for client 86. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 149,
+    "user_messages": [
+      "Book dance on 2026-04-05 for client 27. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 150,
+    "user_messages": [
+      "Book dance on 2026-04-10 for client 38. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 151,
+    "user_messages": [
+      "Book dance on 2026-04-10 for client 81. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 152,
+    "user_messages": [
+      "Book yoga on 2026-04-12 for client 15. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 153,
+    "user_messages": [
+      "Book yoga on 2026-04-18 for client 60. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 154,
+    "user_messages": [
+      "Book stretching on 2026-04-08 for client 36. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 155,
+    "user_messages": [
+      "Book stretching on 2026-04-20 for client 24. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 156,
+    "user_messages": [
+      "Book dance on 2026-04-35 for client 3. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 157,
+    "user_messages": [
+      "Book yoga on 2026-04-30 for client 34. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 158,
+    "user_messages": [
+      "Book yoga on 2026-04-18 for client 37. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 159,
+    "user_messages": [
+      "Book yoga on 2026-04-30 for client 36. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 160,
+    "user_messages": [
+      "Book yoga on 2026-04-18 for client 33. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 161,
+    "user_messages": [
+      "Book dance on 2026-04-16 for client 2. Sex: female.",
+      "Ok, try 2026-04-10 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 162,
+    "user_messages": [
+      "Book dance on 2026-04-25 for client 20. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 163,
+    "user_messages": [
+      "Book dance on 2026-04-30 for client 25. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 164,
+    "user_messages": [
+      "Book stretching on 2026-04-24 for client 78. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 165,
+    "user_messages": [
+      "Book yoga on 2026-04-23 for client 65. Sex: male.",
+      "Ok, try 2026-04-27 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 166,
+    "user_messages": [
+      "Book yoga on 2026-04-07 for client 91. Sex: male.",
+      "Ok, try 2026-04-12 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 167,
+    "user_messages": [
+      "Book dance on 2026-04-15 for client 48. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 168,
+    "user_messages": [
+      "Book yoga on 2026-04-15 for client 98. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 169,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 100. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 170,
+    "user_messages": [
+      "Book stretching on 2026-04-15 for client 10. Sex: male.",
+      "Ok, try 2026-04-40 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 171,
+    "user_messages": [
+      "Book dance on 2026-04-14 for client 30. Sex: male.",
+      "Ok, try 2026-04-30 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 172,
+    "user_messages": [
+      "Book dance on 2026-04-45 for client 55. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 173,
+    "user_messages": [
+      "Book dance on 2026-04-20 for client 86. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 174,
+    "user_messages": [
+      "Book dance on 2026-04-17 for client 48. Sex: male.",
+      "Ok, try 2026-04-35 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 175,
+    "user_messages": [
+      "Book dance on 2026-04-15 for client 99. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 176,
+    "user_messages": [
+      "Book stretching on 2026-04-24 for client 45. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 177,
+    "user_messages": [
+      "Book yoga on 2026-04-19 for client 6. Sex: female.",
+      "Ok, try 2026-04-27 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 178,
+    "user_messages": [
+      "Book dance on 2026-04-45 for client 19. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 179,
+    "user_messages": [
+      "Book stretching on 2026-04-04 for client 20. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 180,
+    "user_messages": [
+      "Book yoga on 2026-04-12 for client 82. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 181,
+    "user_messages": [
+      "Book stretching on 2026-04-17 for client 19. Sex: male.",
+      "Ok, try 2026-04-28 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 182,
+    "user_messages": [
+      "Book stretching on 2026-04-08 for client 6. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 183,
+    "user_messages": [
+      "Book dance on 2026-04-24 for client 55. Sex: female.",
+      "Ok, try 2026-04-45 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 184,
+    "user_messages": [
+      "Book dance on 2026-04-15 for client 99. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 185,
+    "user_messages": [
+      "Book yoga on 2026-04-12 for client 59. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 186,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 42. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 187,
+    "user_messages": [
+      "Book dance on 2026-04-13 for client 20. Sex: male.",
+      "Ok, try 2026-04-05 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 188,
+    "user_messages": [
+      "Book stretching on 2026-04-36 for client 2. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 189,
+    "user_messages": [
+      "Book yoga on 2026-04-27 for client 39. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 190,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 45. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 191,
+    "user_messages": [
+      "Book stretching on 2026-04-36 for client 48. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 192,
+    "user_messages": [
+      "Book yoga on 2026-04-25 for client 89. Sex: female.",
+      "Ok, try 2026-04-03 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 193,
+    "user_messages": [
+      "Book yoga on 2026-04-24 for client 30. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 194,
+    "user_messages": [
+      "Book yoga on 2026-04-17 for client 19. Sex: male.",
+      "Ok, try 2026-04-21 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 195,
+    "user_messages": [
+      "Book dance on 2026-04-40 for client 81. Sex: female.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 196,
+    "user_messages": [
+      "Book stretching on 2026-04-22 for client 3. Sex: male.",
+      "Ok, try 2026-04-32 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  },
+  {
+    "question_id": 197,
+    "user_messages": [
+      "Book yoga on 2026-04-15 for client 37. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 198,
+    "user_messages": [
+      "Book yoga on 2026-04-03 for client 48. Sex: male.",
+      "Yes, confirm the appointment."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 1
+  },
+  {
+    "question_id": 199,
+    "user_messages": [
+      "Book stretching on 2026-04-25 for client 68. Sex: male.",
+      "Ok, try 2026-04-12 instead.",
+      "Yes confirm."
+    ],
+    "initial_state": {
+      "schedule": {},
+      "appointments": {}
+    },
+    "difficulty": 2
+  }
+]
