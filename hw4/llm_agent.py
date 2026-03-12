@@ -10,12 +10,11 @@ class LLMAgent:
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            model_name, torch_dtype=torch.float16, device_map="auto"
+            model_name, torch_dtype=torch.float16, device_map=None
         )
 
         self.device = device
-
-        self.model.to(device)
+        self.model.to(self.device)
 
     def act(self, observation):
 
@@ -63,7 +62,7 @@ Sorry, but class type yoga for date 2022-09-27 is unavailable.
             messages, tokenize=False, add_generation_prompt=True
         )
 
-        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
+        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
 
         outputs = self.model.generate(
             **inputs,

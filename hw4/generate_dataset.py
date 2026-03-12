@@ -1,10 +1,12 @@
 import json
 from appointment_env import BookingEnv
+from utils import set_seed
 
 
 def main():
     """Генерация датасетов, сохранение в JSON"""
 
+    set_seed()
     env = BookingEnv()
 
     train = env.generate(2000)
