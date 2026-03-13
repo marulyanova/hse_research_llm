@@ -1,21 +1,21 @@
 import json
 import torch
-from appointment_env import BookingEnv
 from llm_agent import LLMAgent
-from episode_runner import evaluate_model
+from episode_runner import evaluate_model_batched
 from utils import set_seed
+import time
 
 
 def main():
     """Загрузка модели, оценка на Train, Val"""
 
+    start = time.time()
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     set_seed()
-    env = BookingEnv()
-    agent = LLMAgent("Qwen/Qwen2.5-0.5B-Instruct", device)
+    agent = LLMAgent("Qwen/Qwen2.5-0.5B-Instruct", device, logging_flag=True)
 
-    print(agent.device)
+    print("device", agent.device)
 
     with open("train.json") as f:
         train_dataset = json.load(f)
@@ -23,14 +23,15 @@ def main():
     with open("val.json") as f:
         val_dataset = json.load(f)
 
-    train_dataset = train_dataset[:1]
-    val_dataset = val_dataset[:1]
+    train_dataset = train_dataset[:5]
+    val_dataset = val_dataset[:5]
 
-    metrics_train = evaluate_model(agent, env, train_dataset)
-    metrics_val = evaluate_model(agent, env, val_dataset)
+    metrics_train = evaluate_model_batched(agent, train_dataset)
+    metrics_val = evaluate_model_batched(agent, val_dataset)
 
     print(metrics_train)
     print(metrics_val)
+    print(f"Execution time: {time.time() - start}")
 
 
 if __name__ == "__main__":

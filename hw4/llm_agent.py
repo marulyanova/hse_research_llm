@@ -5,24 +5,21 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 class LLMAgent:
     """Агент, который совершает действие на основе полученного observation"""
 
-    def __init__(self, model_name, device="cpu"):
+    def __init__(self, model_name, device="cpu", logging_flag=False):
 
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side="left")
+        dtype = torch.float16 if "cuda" in device else torch.float32
         self.model = AutoModelForCausalLM.from_pretrained(
-            model_name, torch_dtype=torch.float16, device_map=None
+            model_name, torch_dtype=dtype, device_map=None
         )
 
         self.device = device
         self.model.to(self.device)
 
-    def act(self, observation):
+        self.logging = logging_flag
 
         # System-инструкция для следования сценарию
-        messages = [
-            {
-                "role": "system",
-                "content": """You are a helpful assistant for making appointments to sport classes: 'yoga', 'stretching', 'dance'. Client may ask you to create or delete an appointment for sport class. You should use tools.
+        self.system_prompt = """You are a helpful assistant for making appointments to sport classes: 'yoga', 'stretching', 'dance'. Client may ask you to create or delete an appointment for sport class. You should use tools.
 
 Available tools with signature:
 
@@ -51,7 +48,15 @@ your answer: TOOL_CALL {{"name": "check_availability", "args": {{"class_type": "
 
 Example for free text:
 Sorry, but class type yoga for date 2022-09-27 is unavailable.
-""",
+"""
+
+    def build_prompt(self, observation):
+        """Вспомогательная функция для создания промпта"""
+
+        messages = [
+            {
+                "role": "system",
+                "content": self.system_prompt,
             },
             {
                 "role": "user",
@@ -62,22 +67,50 @@ Sorry, but class type yoga for date 2022-09-27 is unavailable.
             messages, tokenize=False, add_generation_prompt=True
         )
 
-        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
+        return prompt
 
-        outputs = self.model.generate(
-            **inputs,
-            max_new_tokens=128,
-            do_sample=False,
-            temperature=None,
-            top_p=None,
-            top_k=None,
-            pad_token_id=self.tokenizer.pad_token_id,
-            eos_token_id=self.tokenizer.eos_token_id,
-        )
+    def act(self, observation):
+        """Одиночный режим"""
 
-        generated_tokens = outputs[0][inputs["input_ids"].shape[1] :]
-        response = self.tokenizer.decode(
-            generated_tokens, skip_special_tokens=True
-        ).strip()
+        return self.act_batch([observation])[0]
 
-        return response
+    def act_batch(self, observations):
+        """
+        Пакетная генерация.
+        observations -  список историй для разных эпизодов
+        """
+
+        prompts = [self.build_prompt(text) for text in observations]
+
+        if self.logging:
+            print(f"OBSERVATIONS: {len(observations)}\n\n{observations}\n\n")
+
+        inputs = self.tokenizer(
+            prompts, return_tensors="pt", padding=True, truncation=True, max_length=256
+        ).to(self.device)
+
+        with torch.inference_mode():
+            outputs = self.model.generate(
+                **inputs,
+                max_new_tokens=128,
+                do_sample=False,
+                temperature=None,
+                top_p=None,
+                top_k=None,
+                pad_token_id=self.tokenizer.pad_token_id,
+                eos_token_id=self.tokenizer.eos_token_id,
+            )
+
+        responses = []
+        for i in range(len(prompts)):
+            input_len = inputs["attention_mask"][i].sum().item()
+            generated_tokens = outputs[i][input_len:]
+            text = self.tokenizer.decode(
+                generated_tokens, skip_special_tokens=True
+            ).strip()
+            responses.append(text)
+
+        if self.logging:
+            print(f"RESPONSES\n\n{responses}\n\n")
+
+        return responses
