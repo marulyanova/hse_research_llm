@@ -193,12 +193,19 @@ class BookingEnv(ToolEnv):
         if self.done:
             return "Episode finished.", 0, True, {}
 
-        reward = 0
+        reward = -0.01
         # для хранения нарушений правил и вызова некорректных тулов
         info = {"policy_violation": False, "invalid_action": False}
 
         # TEXT MESSAGE
         if not action.startswith("TOOL_CALL"):
+
+            text = action.lower()
+
+            # если агент запросил подтверждение записи у пользователя
+            if "confirm" in text:
+                self.awaiting_confirmation = True
+                reward += 0.1  # награда за то, что подтверждение запросил
 
             # если агент послал сообщение текстовое пользователю, то отвечаем след сообщением из сценария
             if self.user_step + 1 < len(self.user_messages):
@@ -237,7 +244,7 @@ class BookingEnv(ToolEnv):
         # confirmation rule
         if name in ["create_appointment", "cancel_appointment"]:
             # если агент вызвал создание, удаление, но ещё не спросил подтверждение
-            if not self.awaiting_confirmation:  # TODO: а где оно вообще изменяется?
+            if not self.awaiting_confirmation:
                 reward -= 0.2
                 info["policy_violation"] = True
                 return (
@@ -259,6 +266,7 @@ class BookingEnv(ToolEnv):
             self.known_entities["appointment_ids"].add(result["appointment_id"])
             self.done = True
             reward += 1  # выполнено
+            self.awaiting_confirmation = False  # сброс ожидания подтверждения
             return str(result), reward, True, {"success": True}
 
         if name == "cancel_appointment":
@@ -270,10 +278,11 @@ class BookingEnv(ToolEnv):
                 reward -= 1
             return str(result), reward, True, {"success": result["success"]}
 
-        # если вообще несуществующий тул
-        reward -= 0.1
-        info["invalid_action"] = True
-        return "Unknown tool", reward, False, info
+        # проверка на несуществующий тул уже есть в галлюцинациях
+        # # если вообще несуществующий тул
+        # reward -= 0.1
+        # info["invalid_action"] = True
+        # return "Unknown tool", reward, False, info
 
     def generate(self, num_of_questions=100):
         """
@@ -382,56 +391,51 @@ class BookingEnv(ToolEnv):
         """Проверка, что в вызванный тул передали существующие аргументы и что название тула существует"""
 
         hallucinations = []
-        hallucination_percent = 0.0
-        cnt_hallucinations = 0
 
-        # штраф за вызов несуществующего тула
         if tool_name not in [
             "check_availability",
             "create_appointment",
             "cancel_appointment",
         ]:
-            hallucinations.append(tool_name)
-            hallucination_percent = 1.0
+            return 1.0, [tool_name]
+
+        cnt = 0
+        total = 0
 
         if tool_name == "check_availability":
-            all = 2
-
+            total = 2
             if args["class_type"] not in self.known_entities["class_types"]:
-                cnt_hallucinations += 1
+                cnt += 1
                 hallucinations.append(args["class_type"])
+
             if args["date"] not in self.known_entities["dates"]:
-                cnt_hallucinations += 1
+                cnt += 1
                 hallucinations.append(args["date"])
 
         if tool_name == "create_appointment":
-
-            all = 4
-
+            total = 4
             if args["class_type"] not in self.known_entities["class_types"]:
-                cnt_hallucinations += 1
+                cnt += 1
                 hallucinations.append(args["class_type"])
 
             if args["date"] not in self.known_entities["dates"]:
-                cnt_hallucinations += 1
+                cnt += 1
                 hallucinations.append(args["date"])
 
             if args["client_id"] not in self.known_entities["client_ids"]:
-                cnt_hallucinations += 1
+                cnt += 1
                 hallucinations.append(args["client_id"])
 
             if args["sex"] not in self.known_entities["sex"]:
-                cnt_hallucinations += 1
+                cnt += 1
                 hallucinations.append(args["sex"])
 
         if tool_name == "cancel_appointment":
-
-            all = 1
+            total = 1
 
             if args["appointment_id"] not in self.known_entities["appointment_ids"]:
-                cnt_hallucinations += 1
+                cnt += 1
                 hallucinations.append(args["appointment_id"])
 
-        all = max(1, len(hallucinations))
-        hallucination_percent = max(hallucination_percent, cnt_hallucinations / all)
-        return hallucination_percent, hallucinations
+        percent = cnt / max(1, total)
+        return percent, hallucinations

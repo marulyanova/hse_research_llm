@@ -8,6 +8,8 @@
 
 **generate_dataset**: Генерация Train, Val датасетов
 
+**grpo_training**: Обучение методом GRPO 
+
 **llm_agent**: Класс агента, содержит prompt для решения задачи промптингом
 
 **run_pipeline**: Создает среду, агента, прогоняет на Train, Val датасетах
