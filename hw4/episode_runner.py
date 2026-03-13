@@ -66,7 +66,7 @@ def evaluate_model_batched(agent, dataset, batch_size=32):
     verifier = TrajectoryVerifier()
     metrics = []
 
-    for i in range(0, len(dataset), batch_size):
+    for i in tqdm(range(0, len(dataset), batch_size)):
         chunk_data = dataset[i : min(i + batch_size, len(dataset))]
         chunk_metrics = run_parallel_episodes(agent, chunk_data, verifier)
         metrics.extend(chunk_metrics)
@@ -100,7 +100,7 @@ def run_parallel_episodes(agent, data_samples, verifier):
 
     max_steps = 10
 
-    for step in range(max_steps):
+    for step in tqdm(range(max_steps)):
         active_indices = [i for i, ep in enumerate(episodes) if not ep["done"]]
         if not active_indices:
             break
