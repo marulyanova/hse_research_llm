@@ -4,6 +4,7 @@ from llm_agent import LLMAgent
 from episode_runner import evaluate_model_batched
 from utils import set_seed
 import time
+import random
 
 
 def main():
@@ -23,13 +24,13 @@ def main():
     with open("val.json") as f:
         val_dataset = json.load(f)
 
-    train_dataset = train_dataset[:5]
-    val_dataset = val_dataset[:5]
+    train_dataset = random.sample(train_dataset, 250)
+    val_dataset = random.sample(val_dataset, 50)
 
-    metrics_train = evaluate_model_batched(agent, train_dataset)
+    # metrics_train = evaluate_model_batched(agent, train_dataset)
     metrics_val = evaluate_model_batched(agent, val_dataset)
 
-    print(metrics_train)
+    # print(metrics_train)
     print(metrics_val)
     print(f"Execution time: {time.time() - start}")
 
