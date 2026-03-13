@@ -36,6 +36,12 @@ python generate_dataset.py
 python run_pipeline.py
 ```
 
+**3) GRPO Train**
+
+```sh
+python grpo_training.py
+```
+
 ## Запуск в ipynb
 
 Весь код загружен сюда: https://www.kaggle.com/datasets/marulyanova/code-for-hw4-hse-research-llm

@@ -1,3 +1,3 @@
-Эксперименты, метрики, код: baseline_grpo_sft_exps.ipynb
+**Эксперименты, метрики, код:** baseline_grpo_sft_exps.ipynb
 
-Отчет о проделанной работе: report.pdf
+**Отчет о проделанной работе:** report.pdf

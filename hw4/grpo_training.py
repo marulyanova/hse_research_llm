@@ -1,4 +1,6 @@
 import torch
+import json
+import random
 from datasets import Dataset
 from unsloth import FastLanguageModel
 from trl import GRPOTrainer, GRPOConfig
@@ -170,3 +172,17 @@ def grpo_train_loop(train_data):
     )
 
     trainer.train()
+
+
+def main():
+
+    with open("val.json") as f:
+        train_dataset = json.load(f)
+
+    train_dataset = random.sample(train_dataset, 250)
+
+    grpo_train_loop(train_dataset)
+
+
+if __name__ == "__main__":
+    main()
