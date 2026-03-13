@@ -1,3 +1,5 @@
+Отчет: hse_llm_research_hw4.pdf
+
 ## Описание функциональности
 
 **appointment_env**: Содержит BookingEnv, отнаследованный от ToolEnv, содержит методы установки начального состояния среды, логику вызовов тулов, генерацию данных (сценариев диалога), проверку на галлюцинации и др. правила
@@ -38,4 +40,4 @@ python run_pipeline.py
 
 Весь код загружен сюда: https://www.kaggle.com/datasets/marulyanova/code-for-hw4-hse-research-llm
 
-просто запустить все ячейки
+запустить все ячейки в agent-tools-prompting-grpo-exps.ipynb

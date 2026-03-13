@@ -7,10 +7,17 @@ class LLMAgent:
 
     def __init__(self, model_name, device="cpu", logging_flag=False):
 
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side="left")
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            model_name,
+            padding_side="left",
+            token="",
+        )
         dtype = torch.float16 if "cuda" in device else torch.float32
         self.model = AutoModelForCausalLM.from_pretrained(
-            model_name, torch_dtype=dtype, device_map=None
+            model_name,
+            torch_dtype=dtype,
+            device_map=None,
+            token="",
         )
 
         self.device = device

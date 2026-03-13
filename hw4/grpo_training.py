@@ -71,6 +71,8 @@ verifier = TrajectoryVerifier()
 
 
 class RLAgent:
+    """Для батчевания"""
+
     def __init__(self, model, tokenizer):
         self.model = model
         self.tokenizer = tokenizer
@@ -106,6 +108,7 @@ class RLAgent:
 
 
 def prepare_grpo_dataset(data):
+    """Подготовка фиктивной колонки prompt для соотвествия формату GRPOtrainer"""
     rows = []
     for row in data:
         first_msg = row["user_messages"][0]
@@ -122,6 +125,7 @@ TOOL_CALL {{"name": "...", "args": {{...}}}}
 
 
 def make_reward_function(model, tokenizer, verifier, dataset):
+    """Кастомная ревард-фукнция, которая оценивает всю траекторию"""
     agent = RLAgent(model, tokenizer)
 
     def env_reward(prompts, completions, **kwargs):
