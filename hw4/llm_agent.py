@@ -86,7 +86,7 @@ Sorry, but class type yoga for date 2022-09-27 is unavailable.
             print(f"OBSERVATIONS: {len(observations)}\n\n{observations}\n\n")
 
         inputs = self.tokenizer(
-            prompts, return_tensors="pt", padding=True, truncation=True, max_length=256
+            prompts, return_tensors="pt", padding=True, truncation=True, max_length=2048
         ).to(self.device)
 
         with torch.inference_mode():

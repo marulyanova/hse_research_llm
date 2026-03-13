@@ -1,28 +1,23 @@
-import unsloth
 import torch
-import json
-import random
 from datasets import Dataset
-
 from unsloth import FastLanguageModel
 from trl import GRPOTrainer, GRPOConfig
-
-from utils import set_seed
 from appointment_env import BookingEnv
-from episode_runner import run_parallel_episodes, format_history
 from verifier import TrajectoryVerifier
+from episode_runner import format_history
+from utils import set_seed
 
 set_seed()
 
 CONFIG = {
     "model": "Qwen/Qwen2.5-0.5B-Instruct",
-    "max_seq_length": 256,
+    "max_seq_length": 2048,
     "max_new_tokens": 128,
-    "num_generations": 6,
+    "num_generations": 4,
     "temperature": 0.8,
     "top_k": 40,
     "lr": 2e-5,
-    "batch_size": 8,
+    "batch_size": 4,
     "epochs": 3,
 }
 
@@ -75,55 +70,15 @@ grpo_config = GRPOConfig(
 verifier = TrajectoryVerifier()
 
 
-# def env_reward(prompts, completions, dataset_row, **kwargs):
-#     scenarios = []
-#     for row in dataset_row:
-#         scenarios.append(row)
-#     results = run_parallel_episodes(agent, scenarios, verifier)
-#     rewards = [r["total_reward"] for r in results]
-#     return rewards
-
-
-def prepare_grpo_dataset(data):
-    """Для GRPO нужен формат датасета, содержащий колонку prompt, создадим фиктивную колонку,
-    а в reward будут использоваться другие данные"""
-
-    rows = []
-    for row in data:
-        first_msg = row["user_messages"][0]
-
-        prompt = f"""
-You are a helpful assistant for booking sport classes.
-
-User: {first_msg}
-
-Respond with either text or:
-
-TOOL_CALL {{"name": "...", "args": {{...}}}}
-"""
-        rows.append(
-            {
-                "prompt": prompt,
-                "question_id": row["question_id"],
-                "user_messages": row["user_messages"],
-                "initial_state": row["initial_state"],
-                "difficulty": row["difficulty"],
-            }
-        )
-
-    return Dataset.from_list(rows)
-
-
 class RLAgent:
     def __init__(self, model, tokenizer):
         self.model = model
         self.tokenizer = tokenizer
-        self.device = model.device
+        self.device = next(model.parameters()).device
 
     def act_batch(self, observations):
-        prompts = observations
         inputs = self.tokenizer(
-            prompts,
+            observations,
             return_tensors="pt",
             padding=True,
             truncation=True,
@@ -140,29 +95,47 @@ class RLAgent:
             )
 
         responses = []
-        for i in range(len(prompts)):
+        for i, prompt in enumerate(observations):
             input_len = inputs["attention_mask"][i].sum().item()
             generated_tokens = outputs[i][input_len:]
             text = self.tokenizer.decode(
-                generated_tokens,
-                skip_special_tokens=True,
+                generated_tokens, skip_special_tokens=True
             ).strip()
             responses.append(text)
-
         return responses
 
 
+def prepare_grpo_dataset(data):
+    rows = []
+    for row in data:
+        first_msg = row["user_messages"][0]
+        prompt = f"""You are a helpful assistant for booking sport classes.
+
+User: {first_msg}
+
+Respond with either text or:
+
+TOOL_CALL {{"name": "...", "args": {{...}}}}
+"""
+        rows.append({"prompt": prompt, "scenario": row})
+    return Dataset.from_list(rows)
+
+
 def make_reward_function(model, tokenizer, verifier, dataset):
+    agent = RLAgent(model, tokenizer)
+
     def env_reward(prompts, completions, **kwargs):
-        agent = RLAgent(model, tokenizer)
         rewards = []
-        for completion, scenario in zip(completions, dataset):
+        for completion, row in zip(completions, dataset):
+            scenario = row["scenario"]
             env = BookingEnv()
             obs = env.reset(scenario)
             actions = [completion]
+
             obs, reward, done, info = env.step(completion)
             history = [("OBS", obs), ("ACTION", completion)]
             step = 0
+
             while not done and step < 8:
                 prompt = format_history(history)
                 action = agent.act_batch([prompt])[0]
@@ -172,6 +145,7 @@ def make_reward_function(model, tokenizer, verifier, dataset):
                 history.append(("ACTION", action))
                 history.append(("OBS", obs))
                 step += 1
+
             result = verifier.verify_trajectory(BookingEnv(), scenario, actions)
             rewards.append(result["total_reward"])
         return rewards
@@ -181,24 +155,14 @@ def make_reward_function(model, tokenizer, verifier, dataset):
 
 def grpo_train_loop(train_data):
     train_dataset = prepare_grpo_dataset(train_data)
+    reward_fn = make_reward_function(model, tokenizer, verifier, train_dataset)
 
     trainer = GRPOTrainer(
         model=model,
         processing_class=tokenizer,
-        reward_funcs=[make_reward_function(model, tokenizer, verifier, train_dataset)],
+        reward_funcs=[reward_fn],
         args=grpo_config,
         train_dataset=train_dataset,
     )
 
     trainer.train()
-
-
-def main():
-    with open("train.json") as f:
-        train_dataset = json.load(f)
-
-    grpo_train_loop(train_dataset)
-
-
-if __name__ == "__main__":
-    main()
