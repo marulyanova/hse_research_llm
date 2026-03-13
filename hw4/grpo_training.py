@@ -1,3 +1,4 @@
+import unsloth
 import torch
 import json
 import random
@@ -17,11 +18,11 @@ CONFIG = {
     "model": "Qwen/Qwen2.5-0.5B-Instruct",
     "max_seq_length": 256,
     "max_new_tokens": 128,
-    "num_generations": 8,
+    "num_generations": 6,
     "temperature": 0.8,
     "top_k": 40,
     "lr": 2e-5,
-    "batch_size": 32,
+    "batch_size": 8,
     "epochs": 3,
 }
 
@@ -83,6 +84,36 @@ verifier = TrajectoryVerifier()
 #     return rewards
 
 
+def prepare_grpo_dataset(data):
+    """Для GRPO нужен формат датасета, содержащий колонку prompt, создадим фиктивную колонку,
+    а в reward будут использоваться другие данные"""
+
+    rows = []
+    for row in data:
+        first_msg = row["user_messages"][0]
+
+        prompt = f"""
+You are a helpful assistant for booking sport classes.
+
+User: {first_msg}
+
+Respond with either text or:
+
+TOOL_CALL {{"name": "...", "args": {{...}}}}
+"""
+        rows.append(
+            {
+                "prompt": prompt,
+                "question_id": row["question_id"],
+                "user_messages": row["user_messages"],
+                "initial_state": row["initial_state"],
+                "difficulty": row["difficulty"],
+            }
+        )
+
+    return Dataset.from_list(rows)
+
+
 class RLAgent:
     def __init__(self, model, tokenizer):
         self.model = model
@@ -121,15 +152,11 @@ class RLAgent:
         return responses
 
 
-def make_reward_function(train_data):
+def make_reward_function(model, tokenizer, verifier, dataset):
     def env_reward(prompts, completions, **kwargs):
-        model = kwargs["model"]
-        tokenizer = kwargs["processing_class"]
         agent = RLAgent(model, tokenizer)
-        scenarios = kwargs["dataset"]
-
         rewards = []
-        for completion, scenario in zip(completions, scenarios):
+        for completion, scenario in zip(completions, dataset):
             env = BookingEnv()
             obs = env.reset(scenario)
             actions = [completion]
@@ -153,13 +180,12 @@ def make_reward_function(train_data):
 
 
 def grpo_train_loop(train_data):
-    train_dataset = Dataset.from_list(train_data)
-    reward_fn = make_reward_function(train_data)
+    train_dataset = prepare_grpo_dataset(train_data)
 
     trainer = GRPOTrainer(
         model=model,
         processing_class=tokenizer,
-        reward_funcs=[reward_fn],
+        reward_funcs=[make_reward_function(model, tokenizer, verifier, train_dataset)],
         args=grpo_config,
         train_dataset=train_dataset,
     )
